@@ -1,16 +1,25 @@
 <template>
-  <form class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="text" placeholder="Pokemon name" value="">
-    <span class="icon is-small is-left">
-      <i class="fa fa-search"></i>
-    </span>
-  </form>
+  <div>
+    <form class="control has-icons-left has-icons-right"">
+      <input class="input is-danger" type="text" placeholder="Pokemon name" value="" v-model="searchValue">
+      <span class="icon is-small is-left">
+        <i class="fa fa-search"></i>
+      </span>
+    </form>
+
+    <h1>Your research : {{searchValue}}</h1>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'search',
-  props: []
+  props: [],
+  data() {
+    return {
+        searchValue: '',
+    };
+  },
 }
 </script>
 
