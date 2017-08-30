@@ -5,10 +5,10 @@
         <img src="./assets/zenidex.png"/>
       </div>
       <div class="m-t">
-        <search />
+        <search v-on:onSearchChange="onSearchChange"/>
       </div>
       <div class="m-t">
-        <result />
+        <result :criteria="searchCriteria"/>
       </div>
     </div>
   </div>
@@ -23,6 +23,16 @@ export default {
     Result,
     Search,
   },
+  data() {
+    return {
+      searchCriteria: '',
+    };
+  },
+  methods: {
+    onSearchChange: function(newSearchValue){
+      this.searchCriteria = newSearchValue;
+    },
+  }
 }
 </script>
 

@@ -1,7 +1,11 @@
 <template>
   <div class="resultset">
     <div class="columns is-multiline">
-      <div class="column is-2 has-text-centered" v-for="pokemon in pokemons">
+      <div
+          class="column is-2 has-text-centered"
+          v-for="pokemon of pokemons"
+          v-if="filterOnPokemon(pokemon)"
+        >
         <Card :name="pokemon.name" :image="pokemon.image"/>
       </div>
     </div>
@@ -14,6 +18,16 @@ export default {
   name: 'result',
   components : {
     Card,
+  },
+  props: [
+    'criteria'
+  ],
+  methods: {
+    filterOnPokemon: function(pokemon) {
+      const lowerSearch = this.criteria.toLowerCase();
+      const lowerPokemon = pokemon.name.toLowerCase();
+      return lowerPokemon.includes(lowerSearch);
+    },
   },
   data() {
     return {
