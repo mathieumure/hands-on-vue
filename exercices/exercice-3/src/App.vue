@@ -5,7 +5,7 @@
         <img src="./assets/zenidex.png"/>
       </div>
       <div class="m-t">
-        <search v-on:onSearchChange="onSearchChange"/>
+        <search @onSearchChange="onSearchChange"/>
       </div>
       <div class="m-t">
         <result :criteria="searchCriteria"/>
@@ -15,25 +15,25 @@
 </template>
 
 <script>
-import Search from './components/Search.vue';
-import Result from './components/Result.vue';
+import Search from "./components/Search.vue";
+import Result from "./components/Result.vue";
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Result,
-    Search,
+    Search
   },
   data() {
     return {
-      searchCriteria: '',
+      searchCriteria: ""
     };
   },
   methods: {
-    onSearchChange: function(newSearchValue){
+    onSearchChange(newSearchValue) {
       this.searchCriteria = newSearchValue;
-    },
+    }
   }
-}
+};
 </script>
 
 <style>

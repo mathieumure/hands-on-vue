@@ -6,7 +6,7 @@
         type="text"
         placeholder="Pokemon name"
         v-model="searchValue"
-        v-on:keyup="handleKeyUp"
+        @keyup="handleKeyUp"
       />
       <span class="icon is-small is-left">
         <i class="fa fa-search"></i>
@@ -19,18 +19,18 @@
 
 <script>
 export default {
-  name: 'search',
+  name: "search",
   data() {
     return {
-        searchValue: '',
+      searchValue: ""
     };
   },
   methods: {
     handleKeyUp: function(event) {
-        this.$emit('onSearchChange', event.target.value);
-    },
-  },
-}
+      this.$emit("onSearchChange", event.target.value);
+    }
+  }
+};
 </script>
 
 <style>
