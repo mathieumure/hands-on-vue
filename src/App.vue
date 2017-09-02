@@ -5,25 +5,35 @@
         <img src="./assets/zenidex.png"/>
       </div>
       <div class="m-t">
-        <search />
+        <search @onSearchChange="onSearchChange"/>
       </div>
       <div class="m-t">
-        <result />
+        <result :criteria="searchCriteria"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Search from './components/Search.vue';
-import Result from './components/Result.vue';
+import Search from "./components/Search.vue";
+import Result from "./components/Result.vue";
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Result,
-    Search,
+    Search
   },
-}
+  data() {
+    return {
+      searchCriteria: ""
+    };
+  },
+  methods: {
+    onSearchChange(newSearchValue) {
+      this.searchCriteria = newSearchValue;
+    }
+  }
+};
 </script>
 
 <style>
