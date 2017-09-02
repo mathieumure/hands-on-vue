@@ -15,6 +15,8 @@ Pour vous aider, nous vous conseillons d'utiliser l'extention [**Vue-devtools**]
 - [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
+> Pour les utilisateurs de VS Code, nous vous conseillons d'utiliser l'extension [**vetur**](https://vuejs.github.io/vetur/)
+
 ## Exercices
 
 Chaques exercice pourra partir d'un code propre:
