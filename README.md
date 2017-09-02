@@ -23,13 +23,12 @@ La présentation accompagnant ce code labs est disponible [ici](https://docs.goo
 
 ## Exercices
 
-Chaques exercice pourra partir d'un code propre:
+> Chaques exercice pourra partir d'un code propre:
+>- `git checkout PW0`: un site statique que nous allons vuetifier
+>- `git checkout PW1`: projet tel qu'attendu après l'exercice 1
+>- `git checkout PW2`: projet tel qu'attendu après l'exercice 2
+>- etc...
 
-- `step0`: un site statique que nous allons vuetifier
-- `step1`: projet tel qu'attendu après l'exercice 1
-- `step2`: projet tel qu'attendu après l'exercice 2
-- `step3`: projet tel qu'attendu après l'exercice 3
-- etc...
 
 ### Exercice 1 - Getting started
 
