@@ -29,8 +29,13 @@ La présentation accompagnant ce code labs est disponible [ici](https://docs.goo
 >- `git checkout PW2`: projet tel qu'attendu après l'exercice 2
 >- etc...
 
+### PW0 - Statique website
 
-### Exercice 1 - Getting started
+Tout au long de ce codelab, nous allons faire évoluer un site statique. Vous pouvez récupérer ce site [ici](https://github.com/mathieumure/hands-on-vue/archive/PW0.zip) et le lancer directement depuis votre navigateur.
+
+Vous êtes maintenant prêt à démarrer.
+
+### PW1 - Getting started
 
 Génération d'un template vue avec vue-cli. Template webpack ou webpack-simple ?
 
