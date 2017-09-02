@@ -17,6 +17,10 @@ Pour vous aider, nous vous conseillons d'utiliser l'extention [**Vue-devtools**]
 
 > Pour les utilisateurs de VS Code, nous vous conseillons d'utiliser l'extension [**vetur**](https://vuejs.github.io/vetur/)
 
+## Présentation
+
+La présentation accompagnant ce code labs est disponible [ici](https://docs.google.com/presentation/d/1tk_6xn5FNG0VB_nT-NWxga8gqoo9LT6R0wjiLMBopak/edit?usp=sharing)
+
 ## Exercices
 
 Chaques exercice pourra partir d'un code propre:
