@@ -37,7 +37,32 @@ Vous êtes maintenant prêt à démarrer.
 
 ### PW1 - Getting started
 
-Génération d'un template vue avec vue-cli. Template webpack ou webpack-simple ?
+Afin d'intégrer ces fichiers statiques, nous allons générer un template de base permettant de développer une application *VueJS*.
+
+- Installez `vue-cli`
+```
+npm i -g vue-cli
+```
+
+- Créez un nouveau dossier qui va contenir notre application
+```
+mkdir <folder> && cd <folder>
+```
+
+- Générer un squelette d'application, pour cela nous allons utiliser le template officiel `webpack-simple`
+```
+vue init webpack-simple
+```
+
+- Installez les dépendances
+```
+npm install
+```
+
+Votre application est maintenant générée et fonctionnelle. Vous pouvez lancer l'application avec la commande suivante
+```
+npm run dev
+```
 
 ### Exercice 2 - Composants
 
