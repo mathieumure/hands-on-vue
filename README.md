@@ -64,13 +64,42 @@ Votre application est maintenant générée et fonctionnelle. Vous pouvez lancer
 npm run dev
 ```
 
-### Exercice 2 - Composants
+### PW2 - Composants
 
-Création des premiers composants (fichier.vue) pour:
-- recherche
-- résultats
+#### Intégration dans App.vue
+Nous sommes maintenant prêt pour intégrer notre site statique dans l'application qui vient d'être générée.
 
-Découverte de props, data, watch, et des hooks
+Vous allez tout d'abord intégré le site statique dans l'application:
+    - les éléments à l'extérieur de `<body>` doivent se trouver dans le fichier index.html
+    - le contenu de `<body>` doit être inséré dans le composant App.vue
+    - (optionnel) vous pouvez déplacer le style du fichier `style.css` dans le composant `App.vue`
+
+#### Création des premiers composants
+
+Vous allez maintenant créer vos premiers composants Vue.
+
+- Créer un composant `search.vue` qui va contenir le formulaire de recherche. Mettre à jour App.vue pour définir ce composant de manière local.
+
+- Créer un composant `result.vue` qui va contenir le résultat de la recherche. Ce composant aura comme donnée une liste statique d'éléments et accéder directement au contenu du tableau.
+```javascript
+pokemons: [
+    { name: 'Bulbasaur',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png' },
+    ...
+]
+```
+```html
+{{ pokemons[0].name }}
+```
+N'oubliez pas de mettre à jour App.vue pour importer ce nouveau composant.
+
+- On va maintenant extraire les cards de chaque pokemon dans un composant dédié `card.vue`. Ce composant prendre deux propriétées:
+    - `name` qui sera le nom du pokemon
+    - `image`qui sera l'URL de l'image à affichée
+Ré-écriver le composant `result.vue` pour utiliser ce nouveau composant cards
+
+- *(bonus)* inscrivez le composant `result.vue` de manière global.
+
 
 ### Exercice 3 - Directives
 
