@@ -101,12 +101,27 @@ Ré-écriver le composant `result.vue` pour utiliser ce nouveau composant cards
 - *(bonus)* inscrivez le composant `result.vue` de manière global.
 
 
-### Exercice 3 - Directives
+### PW3 - Directives
 
-Utilisation de v-if
-Utilisation de v-for
-Utilisation de v-model
-Utilisation de v-on
+
+Le composant `search.vue` est actuellement qu'un simple champ de formulaire. Nous allons le rendre un peu plus intéractif en lui ajoutant certains comportement:
+- Utilisez la directive `v-model` pour binder le champ `input` à une variable du composant
+- Ajouter un handler sur l'événement `keyup` qui va permettre au composant d'émettre un événement `onSearchChange` utilisable par un composant parent
+- *(bonus)* Ajoutez lodash pour que l'événément onSearchChange ne soit émit qu'après un certain délai de saisi (`debounce`)
+
+Maitenant, nous allons mettre à jour le composant `result.vue` pour qu'il affiche une liste filtrée:
+- Affiche la liste des pokemons en utilisant la directive `v-for`
+- Ajoutez une propriété `criteria` qui sera la chaîne de caractère qui permettra de filtrer nos pokemon
+- Ajouter une condition de rendu du composant en utilisant la directive `v-if`. Le méthode de filtre sera la suivante
+```javascript
+const lowerSearch = this.criteria.toLowerCase();
+const lowerPokemon = pokemon.name.toLowerCase();
+return lowerPokemon.includes(lowerSearch);
+```
+
+Nous allons maitenant lier les deux composants via `App.vue`.
+- Ajoutez un handler de l'événement `onSearchChange` qui va récupérer la valeur de recherche et la stocker.
+- Passer cette donnée dans le composant result via la nouvelle propriété `criteria`.
 
 ### Exercice 4 - Filtres
 
