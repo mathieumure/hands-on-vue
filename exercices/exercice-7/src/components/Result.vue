@@ -18,6 +18,7 @@
 <script>
 import axios from 'axios';
 import Card from './Card.vue';
+import { mapGetters } from 'vuex';
 export default {
   name: 'result',
   components : {
@@ -34,7 +35,9 @@ export default {
     },
   },
   computed: {
-    // a computed getter
+    ...mapGetters({
+      pokemons: 'pokemons',
+    }),
     computedPokemons: function () {
       return this.pokemons.map(pokemon => {
         const pokemonImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
@@ -43,21 +46,8 @@ export default {
       });
     },
   },
-  data() {
-    return {
-      pokemons: [],
-    };
-  },
   mounted() {
-    axios
-      .get('http://pokeapi.co/api/v2/pokedex/1/')
-      .then(res => res.data)
-      .then(({ pokemon_entries }) => {
-        this.pokemons = pokemon_entries.map(pokemon => ({
-          id: pokemon.entry_number,
-          name: pokemon.pokemon_species.name,
-        }));
-      });
+    this.$store.dispatch('LOAD_POKEMONS')
   },
 }
 </script>
