@@ -6,7 +6,10 @@
           v-for="pokemon of computedPokemons"
           v-if="filterOnPokemon(pokemon)"
         >
-        <Card :name="pokemon.name" :image="pokemon.image"/>
+        <Card :name="pokemon.name" :image="pokemon.image" 
+          :favorite="$store.getters.isFavorite(pokemon)" 
+          @addToFavorites="$store.commit('ADD_TO_FAVORITES', pokemon)"
+          @removeFromFavorites="$store.commit('REMOVE_FROM_FAVORITES', pokemon)"/>
       </div>
     </div>
   </div>
@@ -38,7 +41,7 @@ export default {
         pokemon.image = pokemonImage;
         return pokemon;
       });
-    }
+    },
   },
   data() {
     return {
