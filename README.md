@@ -11,21 +11,31 @@ Pour faire ce codelab, vous avez besoin des outils suivants :
 * NodeJS 8.x
 * un IDE (WebStorm, Visual Studio Code, Vim, ...)
 
-Pour vous aider, nous vous conseillond d'utiliser l'extention [**Vue-devtools**](https://github.com/vuejs/vue-devtools) disponible pour:
+Pour vous aider, nous vous conseillons d'utiliser l'extention [**Vue-devtools**](https://github.com/vuejs/vue-devtools) disponible pour:
 - [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
+> Pour les utilisateurs de VS Code, nous vous conseillons d'utiliser l'extension [**vetur**](https://vuejs.github.io/vetur/)
+
+## Présentation
+
+La présentation accompagnant ce code labs est disponible [ici](https://docs.google.com/presentation/d/1tk_6xn5FNG0VB_nT-NWxga8gqoo9LT6R0wjiLMBopak/edit?usp=sharing)
+
 ## Exercices
 
-Chaques exercice pourra partir d'un code propre:
+> Chaques exercice pourra partir d'un code propre:
+>- `git checkout PW0`: un site statique que nous allons vuetifier
+>- `git checkout PW1`: projet tel qu'attendu après l'exercice 1
+>- `git checkout PW2`: projet tel qu'attendu après l'exercice 2
+>- etc...
 
-- `step0`: un site statique que nous allons vuetifier
-- `step1`: projet tel qu'attendu après l'exercice 1
-- `step2`: projet tel qu'attendu après l'exercice 2
-- `step3`: projet tel qu'attendu après l'exercice 3
-- etc...
+### PW0 - Statique website
 
-### Exercice 1 - Getting started
+Tout au long de ce codelab, nous allons faire évoluer un site statique. Vous pouvez récupérer ce site [ici](https://github.com/mathieumure/hands-on-vue/archive/PW0.zip) et le lancer directement depuis votre navigateur.
+
+Vous êtes maintenant prêt à démarrer.
+
+### PW1 - Getting started
 
 Génération d'un template vue avec vue-cli. Template webpack ou webpack-simple ?
 
