@@ -1,46 +1,47 @@
 <template>
   <div id="app">
-    <div class="container">
-      <div class="cover">
-        <img src="./assets/zenidex.png"/>
-      </div>
-      <div class="m-t">
-        <search @onSearchChange="onSearchChange"/>
-      </div>
-      <div class="m-t">
-        <result :criteria="searchCriteria"/>
-      </div>
+    <div>
+      <span class="m-r">
+        <router-link to="/">Pokedex</router-link>
+      </span>
+      <router-link to="/favorites">Favorites</router-link>
     </div>
+    <div class="cover">
+      <img src="./assets/zenidex.png"/>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Search from "./components/Search.vue";
-import Result from "./components/Result.vue";
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from "./Home.vue";
+import Favorites from './Favorites.vue';
+
+Vue.use(VueRouter);
+
+
+// Defining the routes
+const routes = [
+  { path: '/', component: Home },
+  { path: '/Favorites', component: Favorites }
+];
+
+// Creating the router
+const router = new VueRouter({ routes });
+
 export default {
-  name: "app",
+  router,
+  name: 'app',
   components: {
-    Result,
-    Search
+    Home,
+    Favorites,
   },
-  data() {
-    return {
-      searchCriteria: ""
-    };
-  },
-  methods: {
-    onSearchChange(newSearchValue) {
-      this.searchCriteria = newSearchValue;
-    }
-  }
 };
 </script>
 
 <style>
-.m-t {
-  margin-top: 10px;
-}
-
 .cover {
   background-image: url('https://ourblissfulfamilyeats.files.wordpress.com/2014/07/pokemon-logo.jpg');
   width: 100%;
@@ -57,5 +58,9 @@ export default {
   position: asolute;
   margin-top: 150px;
   height:70px;
+}
+
+.m-r {
+  margin-right: 10px;
 }
 </style>
