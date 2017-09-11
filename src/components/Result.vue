@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import Card from './Card.vue';
 export default {
   name: 'result',
@@ -41,38 +42,19 @@ export default {
   },
   data() {
     return {
-      pokemons: [{
-          id: 1,
-          name: 'bulbasaur',
-        }, {
-          id: 2,
-          name: 'ivysaur',
-        }, {
-          id: 3,
-          name: 'venusaur',
-        }, {
-          id: 4,
-          name: 'charmander',
-        }, {
-          id: 5,
-          name: 'charmeleon',
-        }, {
-          id: 6,
-          name: 'charizard',
-        }, {
-          id: 8,
-          name: 'squirtle',
-        }, {
-          id: 9,
-          name: 'wartortle',
-        }, {
-          id: 10,
-          name: 'blastoise',
-        }, {
-          id: 11,
-          name: 'caterpie',
-      }],
+      pokemons: [],
     };
+  },
+  mounted() {
+    axios
+      .get('http://pokeapi.co/api/v2/pokedex/1/')
+      .then(res => res.data)
+      .then(({ pokemon_entries }) => {
+        this.pokemons = pokemon_entries.map(pokemon => ({
+          id: pokemon.entry_number,
+          name: pokemon.pokemon_species.name,
+        }));
+      });
   },
 }
 </script>
