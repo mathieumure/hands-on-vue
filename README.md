@@ -1,4 +1,4 @@
-# exercice-1
+# exercice-2
 
 > A Vue.js project
 

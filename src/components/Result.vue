@@ -3,7 +3,7 @@
     <div class="columns is-multiline">
       <div
           class="column is-2 has-text-centered"
-          v-for="pokemon of pokemons"
+          v-for="pokemon of computedPokemons"
           v-if="filterOnPokemon(pokemon)"
         >
         <Card :name="pokemon.name" :image="pokemon.image"/>
@@ -29,38 +29,48 @@ export default {
       return lowerPokemon.includes(lowerSearch);
     },
   },
+  computed: {
+    // a computed getter
+    computedPokemons: function () {
+      return this.pokemons.map(pokemon => {
+        const pokemonImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
+        pokemon.image = pokemonImage;
+        return pokemon;
+      });
+    }
+  },
   data() {
     return {
       pokemons: [{
-        name: 'Bulbasaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
-      }, {
-        name: 'Ivysaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png',
-      }, {
-        name: 'Venusaur',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
-      }, {
-        name: 'Charmander',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
-      }, {
-        name: 'Charmeleon',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png',
-      }, {
-        name: 'Charizard',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
-      }, {
-        name: 'Squirtle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png',
-      }, {
-        name: 'Wartortle',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png',
-      }, {
-        name: 'Blastoise',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png',
-      }, {
-        name: 'Caterpie',
-        image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
+          id: 1,
+          name: 'bulbasaur',
+        }, {
+          id: 2,
+          name: 'ivysaur',
+        }, {
+          id: 3,
+          name: 'venusaur',
+        }, {
+          id: 4,
+          name: 'charmander',
+        }, {
+          id: 5,
+          name: 'charmeleon',
+        }, {
+          id: 6,
+          name: 'charizard',
+        }, {
+          id: 8,
+          name: 'squirtle',
+        }, {
+          id: 9,
+          name: 'wartortle',
+        }, {
+          id: 10,
+          name: 'blastoise',
+        }, {
+          id: 11,
+          name: 'caterpie',
       }],
     };
   },
