@@ -44,7 +44,7 @@ Afin d'intégrer ces fichiers statiques, nous allons générer un template de ba
 npm i -g vue-cli
 ```
 
-- Créez un nouveau dossier qui va contenir notre application
+- Créer un nouveau dossier qui va contenir notre application
 ```
 mkdir <folder> && cd <folder>
 ```
@@ -69,7 +69,7 @@ npm run dev
 #### Intégration dans App.vue
 Nous sommes maintenant prêt pour intégrer notre site statique dans l'application qui vient d'être générée.
 
-Vous allez tout d'abord intégré le site statique dans l'application:
+Vous allez tout d'abord intégrer le site statique dans l'application:
     - les éléments à l'extérieur de `<body>` doivent se trouver dans le fichier index.html
     - le contenu de `<body>` doit être inséré dans le composant App.vue
     - (optionnel) vous pouvez déplacer le style du fichier `style.css` dans le composant `App.vue`
@@ -122,9 +122,9 @@ N'oubliez pas de mettre à jour App.vue pour importer ce nouveau composant.
 - On va maintenant extraire les cards de chaque pokemon dans un composant dédié `card.vue`. Ce composant prendra deux propriétés:
     - `name` qui sera le nom du pokemon
     - `image`qui sera l'URL de l'image à affichée
-Ré-écriver le composant `result.vue` pour utiliser ce nouveau composant `card`
+Ré-écrire le composant `result.vue` pour utiliser ce nouveau composant `card`
 
-- *(bonus)* inscrivez le composant `result.vue` de manière globale.
+- *(bonus)* inscrire le composant `result.vue` de manière globale.
 
 
 ### PW3 - Directives
@@ -133,11 +133,11 @@ Ré-écriver le composant `result.vue` pour utiliser ce nouveau composant `card`
 Le composant `search.vue` n'est actuellement qu'un simple champ de formulaire. Nous allons le rendre un peu plus intéractif en lui ajoutant certains comportements:
 - Utilisez la directive `v-model` pour binder le champ `input` à une variable du composant
 - Ajouter un handler sur l'événement `keyup` qui va permettre au composant d'émettre un événement `onSearchChange` utilisable par un composant parent
-- *(bonus)* Ajoutez lodash pour que l'événément onSearchChange ne soit émit qu'après un certain délai de saisi (`debounce`)
+- *(bonus)* Ajouter lodash pour que l'événément onSearchChange ne soit émit qu'après un certain délai de saisi (`debounce`)
 
 Maintenant, nous allons mettre à jour le composant `result.vue` pour qu'il affiche une liste filtrée:
-- Affiche la liste des pokemons en utilisant la directive `v-for`
-- Ajoutez une propriété `criteria` qui sera la chaîne de caractères qui permettra de filtrer nos pokemons
+- Afficher la liste des pokemons en utilisant la directive `v-for`
+- Ajouter une propriété `criteria` qui sera la chaîne de caractères qui permettra de filtrer nos pokemons
 - Ajouter une condition de rendu du composant en utilisant la directive `v-if`. La méthode de filtre sera la suivante
 ```javascript
 const lowerSearch = this.criteria.toLowerCase();
@@ -146,12 +146,12 @@ return lowerPokemon.includes(lowerSearch);
 ```
 
 Nous allons à présent lier les deux composants via `App.vue`.
-- Ajoutez un handler de l'événement `onSearchChange` qui va récupérer la valeur de recherche et la stocker.
+- Ajouter un handler de l'événement `onSearchChange` qui va récupérer la valeur de recherche et la stocker.
 - Passer cette donnée dans le composant result via la nouvelle propriété `criteria`.
 
 ### PW4 - Filtres
 
-Mettez à jour la liste des pokemons avec le code suivant :
+Mettre à jour la liste des pokemons avec le code suivant :
 ```javascript
 pokemons: [{
     id: 1,
@@ -217,16 +217,16 @@ npm install axios
 
 - *(bonus)* Implémenter le composant favorites et ajouter un bouton dans le composant `card.vue` pour ajouter un pokemon aux favoris
 
-- Importez vue-router
+- Importer vue-router
 ```
 npm install vue-router
 ```
 
-Créez deux composants:
+Créer deux composants:
     - `home.vue`: qui va contenir la page que nous avons développé jusqu'à présent.
     - `favorites.vue`: qui ne va contenir qu'un titre pour le moment
 
-Créez un objet router avec les conditions suivantes:
+Créer un objet router avec les conditions suivantes:
     - la route `/` doit afficher le composant home
     - la route `/favorites` doit afficher le composant favorites
 
