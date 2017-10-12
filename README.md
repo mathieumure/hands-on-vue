@@ -1,7 +1,6 @@
 # Introduction
 
 Pendant ce codelab, nous allons créer un Pokedex avec la bibliothèque VueJS. 
-- *(bonus)* Implémenter le composant favorites et ajouter un bouton dans le composant `card.vue` pour ajouter un pokemon aux favoris
 
 ## Prérequis
 
