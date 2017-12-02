@@ -1,0 +1,21 @@
+.m-t {
+  margin-top: 10px;
+}
+
+.cover {
+  background-image: url('https://ourblissfulfamilyeats.files.wordpress.com/2014/07/pokemon-logo.jpg');
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cover img {
+  position: absolute;
+  margin-top: 150px;
+  height:70px;
+}
