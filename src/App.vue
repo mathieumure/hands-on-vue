@@ -1,6 +1,147 @@
 <template>
-  <div id="app">
-    <h1>{{ msg }}</h1>
+  <div class="container">
+    <!-- Cover -->
+    <div class="cover">
+      <img src="/src/assets/images/zenidex.png"/>
+    </div>
+
+    <!-- Searchbar -->
+    <div class="field m-t">
+      <div class="control has-icons-left has-icons-right">
+        <input class="input is-danger" type="text" placeholder="Pokemon name" value="">
+        <span class="icon is-small is-left">
+          <i class="fa fa-search"></i>
+        </span>
+      </div>
+    </div>
+
+    <!-- Result set -->
+    <div class="resultset">
+      <div class="columns is-multiline">
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/1.png"/>
+              <p>
+                Bulbasaur
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/2.png"/>
+              <p>
+                Ivysaur
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/3.png"/>
+              <p>
+                Venusaur
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/4.png"/>
+              <p>
+                Charmander
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/5.png"/>
+              <p>
+                Charmeleon
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/6.png"/>
+              <p>
+                Charizard
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/7.png"/>
+              <p>
+                Squirtle
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/8.png"/>
+              <p>
+                Wartortle
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/9.png"/>
+              <p>
+                Blastoise
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="column is-2 has-text-centered">
+          <div class="card">
+            <div class="card-content">
+              <img src="/src/assets/sprites/10.png"/>
+              <p>
+                Caterpie
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </template>
 
