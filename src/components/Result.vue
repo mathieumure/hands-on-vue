@@ -4,132 +4,47 @@
     <div class="columns is-multiline">
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/1.png"/>
-            <p>
-              Bulbasaur
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Bulbasaur'" :id="1"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/2.png"/>
-            <p>
-              Ivysaur
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Ivysaur'" :id="2"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/3.png"/>
-            <p>
-              Venusaur
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Venusaur'" :id="3"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/4.png"/>
-            <p>
-              Charmander
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Charmander'" :id="4"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/5.png"/>
-            <p>
-              Charmeleon
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Charmeleon'" :id="5"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/6.png"/>
-            <p>
-              Charizard
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Charizard'" :id="6"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/7.png"/>
-            <p>
-              Squirtle
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Squirtle'" :id="7"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/8.png"/>
-            <p>
-              Wartortle
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Wartortle'" :id="8"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/9.png"/>
-            <p>
-              Blastoise
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Blastoise'" :id="9"></card>
 
       <!-- Pokemon -->
-      <div class="column is-2 has-text-centered">
-        <div class="card">
-          <div class="card-content">
-            <img src="/src/assets/sprites/10.png"/>
-            <p>
-              Caterpie
-            </p>
-          </div>
-        </div>
-      </div>
+      <card :name="'Caterpie'" :id="10"></card>
 
     </div>
   </div>
 </template>
 
 <script>
+    import Card from './Card';
+
     export default {
-        name: "result"
+        name: "result",
+        components: {
+          Card
+        }
     }
 </script>
 
