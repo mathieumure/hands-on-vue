@@ -7,12 +7,7 @@
 
     <!-- Searchbar -->
     <div class="field m-t">
-      <div class="control has-icons-left has-icons-right">
-        <input class="input is-danger" type="text" placeholder="Pokemon name" value="">
-        <span class="icon is-small is-left">
-          <i class="fa fa-search"></i>
-        </span>
-      </div>
+      <search />
     </div>
 
     <!-- Result set -->
@@ -146,12 +141,12 @@
 </template>
 
 <script>
+import Search from './components/Search';
+
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'Hello World !'
-    }
+  components: {
+    Search
   }
 }
 </script>
