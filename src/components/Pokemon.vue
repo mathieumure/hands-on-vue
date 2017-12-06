@@ -1,16 +1,25 @@
 <template>
   <div>
     <router-link to="/"><h1>Home</h1></router-link>
-    <card :id="1" :name="'Bulbazor'"/>
+    <card v-if="pokemon.id" :id="pokemon.id" :name="pokemon.name"/>
   </div>
 </template>
 
 <script>
     import Card from './Card';
+    import PokemonService from './pokemonService'
 
     export default {
         name: "pokemon",
-        components: {Card}
+        components: {Card},
+        data() {
+          return {
+            pokemon: {}
+          }
+        },
+        async mounted() {
+          this.pokemon = await PokemonService.getPokemon(this.$route.params.id);
+        }
     }
 </script>
 
