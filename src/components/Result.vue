@@ -4,9 +4,13 @@
     <div class="columns is-multiline">
 
       <div v-if="loading">
-          <h1>Loading...</h1>
+        <h1>Loading...</h1>
       </div>
-      <card v-for="pokemon of pokemons" :key="pokemon.id" :name="pokemon.name" :id="pokemon.id" v-if="!loading && filterOnPokemon(pokemon)"></card>
+
+      <router-link v-for="pokemon of pokemons" :to="`/pokemon/${pokemon.id}`" :key="pokemon.id">
+        <!-- Pokemon -->
+        <card  :name="pokemon.name" :id="pokemon.id" v-if="!loading && filterOnPokemon(pokemon)"></card>
+      </router-link>
 
     </div>
   </div>

@@ -22,5 +22,7 @@
 </script>
 
 <style scoped>
-
+  .card img{
+    min-width: 100px;
+  }
 </style>
