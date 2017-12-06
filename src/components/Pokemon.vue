@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link to="/"><h1>Home</h1></router-link>
-    <card v-if="pokemon.id" :id="pokemon.id" :name="pokemon.name"/>
+    <card v-if="pokemon.id" :pokemon="pokemon"/>
   </div>
 </template>
 

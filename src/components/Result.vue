@@ -9,7 +9,7 @@
 
       <router-link v-for="pokemon of pokemons" :to="`/pokemon/${pokemon.id}`" :key="pokemon.id">
         <!-- Pokemon -->
-        <card  :name="pokemon.name" :id="pokemon.id" v-if="!loading && filterOnPokemon(pokemon)"></card>
+        <card  :pokemon="pokemon" v-if="!loading && filterOnPokemon(pokemon)"></card>
       </router-link>
 
     </div>
