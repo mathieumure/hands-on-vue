@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import Search from './components/Search';
-import Result from './components/Result';
+import Search from './Search';
+import Result from './Result';
 
 export default {
-  name: 'app',
+  name: 'home',
   components: {
     Search,
     Result
