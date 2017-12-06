@@ -1,6 +1,6 @@
 const PokemonService = {
   getPokemons: () => {
-    return [
+    return Promise.resolve([
       {
         name: "Bulbasaur",
         id: 1
@@ -41,7 +41,7 @@ const PokemonService = {
         name: "Caterpie",
         id: 10
       }
-    ];
+    ]);
   }
 };
 
