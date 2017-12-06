@@ -11,6 +11,12 @@ const PokemonService = {
           name: pokemon.pokemon_species.name,
         }));
       });
+  },
+
+  getPokemon: async (id) => {
+    return await axios
+      .get(`https://pokeapi.co/api/v2/pokemon/${id}`)
+      .then(res => res.data);
   }
 };
 
