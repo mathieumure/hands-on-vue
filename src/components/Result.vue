@@ -35,7 +35,9 @@
         },
       },
       mounted() {
-        this.pokemons = PokemonService.getPokemons();
+        PokemonService.getPokemons().then(pokemons => {
+          this.pokemons = pokemons;
+        });
       }
     }
 </script>
