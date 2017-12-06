@@ -4,7 +4,7 @@
     <div class="columns is-multiline">
 
       <!-- Pokemon -->
-      <card v-for="pokemon of pokemons" :key="pokemon.id" :name="pokemon.name" :id="pokemon.id"></card>
+      <card v-for="pokemon of pokemons" :key="pokemon.id" :name="pokemon.name" :id="pokemon.id" v-if="filterOnPokemon(pokemon)"></card>
 
     </div>
   </div>
@@ -18,6 +18,9 @@
         components: {
           Card
         },
+      props: [
+        'criteria'
+      ],
       data() {
           return {
             pokemons: [
@@ -63,7 +66,14 @@
               }
             ]
           }
-      }
+      },
+      methods: {
+        filterOnPokemon: function(pokemon) {
+          const lowerSearch = this.criteria.toLowerCase();
+          const lowerPokemon = pokemon.name.toLowerCase();
+          return lowerPokemon.includes(lowerSearch);
+        },
+      },
     }
 </script>
 

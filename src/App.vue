@@ -9,8 +9,7 @@
     <div class="field m-t">
       <search @onSearchChange="onSearchChange"/>
     </div>
-    <h1>App search value: {{searchCriteria}}</h1>
-    <result />
+    <result :criteria="searchCriteria"/>
 
   </div>
 </template>
