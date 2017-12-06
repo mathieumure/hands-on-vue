@@ -7,10 +7,9 @@
 
     <!-- Searchbar -->
     <div class="field m-t">
-      <search />
+      <search @onSearchChange="onSearchChange"/>
     </div>
-
-    <result />
+    <result :criteria="searchCriteria"/>
 
   </div>
 </template>
@@ -24,6 +23,17 @@ export default {
   components: {
     Search,
     Result
+  },
+
+  data() {
+    return {
+      searchCriteria: ''
+    }
+  },
+  methods: {
+    onSearchChange(newValue) {
+      this.searchCriteria = newValue;
+    }
   }
 }
 </script>
