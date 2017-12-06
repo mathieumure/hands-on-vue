@@ -2,9 +2,14 @@
   <div class="column is-2 has-text-centered">
     <div class="card">
       <div class="card-content">
-        <img :src="`/src/assets/sprites/${id}.png`"/>
+        <img :src="`/src/assets/sprites/${pokemon.id}.png`"/>
         <p>
-          {{name}}
+          {{pokemon.name}}
+        </p>
+        <p v-if="pokemon.height"> Height: {{pokemon.height}}</p>
+        <p v-if="pokemon.weight"> Weight: {{pokemon.weight}}</p>
+        <p v-if="pokemon.types">
+          Type: <span v-for="type of pokemon.types">{{type.type.name}}&nbsp;</span>
         </p>
       </div>
     </div>
@@ -15,8 +20,7 @@
     export default {
         name: "card",
         props: [
-          "name",
-          "id"
+          "pokemon",
         ]
     }
 </script>
