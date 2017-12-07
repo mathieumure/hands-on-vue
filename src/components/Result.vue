@@ -3,8 +3,10 @@
   <div class="resultset">
     <div class="columns is-multiline">
 
-      <!-- Pokemon -->
-      <card v-for="pokemon of pokemons" :key="pokemon.id" :name="pokemon.name" :id="pokemon.id" v-if="filterOnPokemon(pokemon)"></card>
+      <div v-if="loading">
+          <h1>Loading...</h1>
+      </div>
+      <card v-for="pokemon of pokemons" :key="pokemon.id" :name="pokemon.name" :id="pokemon.id" v-if="!loading && filterOnPokemon(pokemon)"></card>
 
     </div>
   </div>
@@ -24,7 +26,8 @@
       ],
       data() {
           return {
-            pokemons: []
+            pokemons: [],
+            loading: true,
           }
       },
       methods: {
@@ -34,10 +37,9 @@
           return lowerPokemon.includes(lowerSearch);
         },
       },
-      mounted() {
-        PokemonService.getPokemons().then(pokemons => {
-          this.pokemons = pokemons;
-        });
+      async mounted() {
+        this.pokemons = await PokemonService.getPokemons();
+        this.loading = false;
       }
     }
 </script>
