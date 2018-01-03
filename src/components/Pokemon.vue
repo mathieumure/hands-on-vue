@@ -15,6 +15,7 @@
     export default {
         name: "pokemon",
         components: {Card},
+        props: [ 'id' ],
         data() {
           return {
             loading: true,
@@ -23,7 +24,7 @@
         },
         async mounted() {
           this.loading = true
-          this.pokemon = await PokemonService.getPokemon(this.$route.params.id);
+          this.pokemon = await PokemonService.getPokemon(this.id);
           this.loading = false
         }
     }
