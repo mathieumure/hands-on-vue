@@ -28,11 +28,13 @@
       props: [
         'criteria'
       ],
-      data() {
-          return {
-            pokemons: [],
-            loading: true,
-          }
+      computed: {
+        pokemons () {
+          return this.$store.getters.pokemons
+        },
+        loading () {
+          return this.$store.getters.loading
+        }
       },
       methods: {
         filterOnPokemon: function(pokemon) {
@@ -41,9 +43,8 @@
           return lowerPokemon.includes(lowerSearch);
         },
       },
-      async mounted() {
-        this.pokemons = await PokemonService.getPokemons();
-        this.loading = false;
+      mounted () {
+        this.$store.dispatch('LOAD_POKEMONS')
       }
     }
 </script>
