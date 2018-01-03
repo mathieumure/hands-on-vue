@@ -4,7 +4,7 @@
     <span v-if="loading">
       <h1>Loading...</h1>
     </span>
-    <card class="column is-2 has-text-centered" :pokemon="pokemon" v-else />
+    <card class="column is-2 has-text-centered" :pokemon="pokemon" v-else-if="pokemon" />
   </div>
 </template>
 
@@ -16,16 +16,17 @@
         name: "pokemon",
         components: {Card},
         props: [ 'id' ],
-        data() {
-          return {
-            loading: true,
-            pokemon: {}
+        computed: {
+          pokemon () {
+            console.log('computed')
+            return this.$store.getters.pokemonDetail[this.id]
+          },
+          loading () {
+            return this.$store.getters.loading
           }
         },
-        async mounted() {
-          this.loading = true
-          this.pokemon = await PokemonService.getPokemon(this.id);
-          this.loading = false
+        mounted() {
+          this.$store.dispatch('LOAD_POKEMON_DETAIL', {pokemonId: this.id})
         }
     }
 </script>
