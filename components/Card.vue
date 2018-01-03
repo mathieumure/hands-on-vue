@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-content">
-      <img :src="`/src/assets/sprites/${pokemon.id}.png`"/>
+      <img :src="`/sprites/${pokemon.id}.png`"/>
       <p>
         {{pokemon.name}}
       </p>
@@ -15,12 +15,12 @@
 </template>
 
 <script>
-    export default {
-        name: "card",
-        props: [
-          "pokemon",
-        ]
-    }
+  export default {
+    name: 'card',
+    props: [
+      'pokemon'
+    ]
+  }
 </script>
 
 <style scoped>
