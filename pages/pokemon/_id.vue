@@ -25,8 +25,8 @@
         return this.$store.getters.loading
       }
     },
-    mounted () {
-      this.$store.dispatch('LOAD_POKEMON_DETAIL', {pokemonId: this.pokemonId})
+    async fetch ({store, params}) {
+      await store.dispatch('LOAD_POKEMON_DETAIL', {pokemonId: params.id})
     }
   }
 </script>
