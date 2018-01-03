@@ -24,11 +24,13 @@ export default {
     Search,
     Result
   },
-
   data () {
     return {
       searchCriteria: ''
     }
+  },
+  async fetch ({store}) {
+    await store.dispatch('LOAD_POKEMONS')
   },
   methods: {
     onSearchChange (newValue) {

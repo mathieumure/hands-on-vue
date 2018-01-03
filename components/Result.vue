@@ -41,9 +41,6 @@
           const lowerPokemon = pokemon.name.toLowerCase()
           return lowerPokemon.includes(lowerSearch)
         }
-      },
-      mounted () {
-        this.$store.dispatch('LOAD_POKEMONS')
       }
     }
 </script>
