@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 
 export const routes = [
   { path: '/', component: Home },
-  { path: '/pokemon/:id', component: Pokemon}
+  { path: '/pokemon/:id', component: Pokemon, props: true}
 ];
 
 export const router = new VueRouter({ routes });
