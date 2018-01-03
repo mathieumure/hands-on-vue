@@ -11,13 +11,13 @@
 <script>
   export default {
     name: 'search',
-    data() {
+    data () {
       return {
         searchValue: ''
       }
     },
     methods: {
-      handleKeyUp: function (event) {
+      handleKeyUp (event) {
         this.$emit('onSearchChange', event.target.value)
       }
     }

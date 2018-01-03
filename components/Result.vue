@@ -17,14 +17,13 @@
 </template>
 
 <script>
-    import Card from './Card';
-    import PokemonService from './pokemonService'
+    import Card from './Card'
 
     export default {
-        name: "result",
-        components: {
-          Card
-        },
+      name: 'result',
+      components: {
+        Card
+      },
       props: [
         'criteria'
       ],
@@ -37,11 +36,11 @@
         }
       },
       methods: {
-        filterOnPokemon: function(pokemon) {
-          const lowerSearch = this.criteria.toLowerCase();
-          const lowerPokemon = pokemon.name.toLowerCase();
-          return lowerPokemon.includes(lowerSearch);
-        },
+        filterOnPokemon (pokemon) {
+          const lowerSearch = this.criteria.toLowerCase()
+          const lowerPokemon = pokemon.name.toLowerCase()
+          return lowerPokemon.includes(lowerSearch)
+        }
       },
       mounted () {
         this.$store.dispatch('LOAD_POKEMONS')
