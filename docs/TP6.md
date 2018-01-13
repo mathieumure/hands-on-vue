@@ -1,6 +1,6 @@
 # TP6 - Server Side Rendering
 
-Pour utilser le server side rendering, nous allons migrer notre projet sur nuxt.js
+Pour utilser le server side rendering, nous allons migrer notre projet sur [nuxt.js](https://fr.nuxtjs.org)
 
 ## Initialisation de nuxt
 

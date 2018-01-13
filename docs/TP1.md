@@ -1,6 +1,6 @@
 # TP1 - Composants
 
-Actuellement, l'ensemble du site est contenu dans notre `index.html`. Nous allons à présent utiliser la puissance de Vue pour rendre notre site dynamique à l'aide de composants.
+Actuellement, l'ensemble du site est contenu dans notre `index.html`. Nous allons à présent utiliser la puissance de [Vue](https://vuejs.org/) pour rendre notre site dynamique à l'aide de composants.
 
 ## Premiers composants de rendu
 
