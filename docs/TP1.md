@@ -15,5 +15,5 @@ Nous allons maintenant créer un composant card qui affichera l'image et le nom 
 
 - Ce composant aura comme `props` le nom du pokemon et son id
 - Ce composant pourra utiliser une `computed` properties afin de calculer l'URL de l'image à charger.
-- Mettre à jour le composant `Result` pour utiliser se composant
+- Mettre à jour le composant `Result` pour utiliser ce composant
 - Ajouter une liste de pokemons en tant que donnée interne du composant `Result` et utiliser la directive `v-for` pour afficher l'ensemble de nos pokemons.  
