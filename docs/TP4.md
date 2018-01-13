@@ -1,6 +1,6 @@
 # TP4 - Router
 
-Nous allons maintenant utiliser `vue-router` afin d'afficher le détail d'un pokemon
+Nous allons maintenant utiliser [vue-router](https://router.vuejs.org) afin d'afficher le détail d'un pokemon
 
 ## Initialisation
 - Déplacer la logique de `App` dans un composant `Home`
