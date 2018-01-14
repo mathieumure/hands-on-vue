@@ -4,7 +4,7 @@ Pour utilser le server side rendering, nous allons migrer notre projet sur [nuxt
 
 ## Initialisation de nuxt
 
-Initialiser un nouveau projet nuxt dans votre répertoire courant
+Initialiser un nouveau projet `nuxt` dans votre répertoire courant
 ```
 vue init nuxt-community/starter-template .
 ```
@@ -31,4 +31,4 @@ export default () => new Vuex.Store({
 
 ## Pre-fetching des données
 
-Utiliser la puissance de Nuxt pour pré-fétcher vos données dans vos pages. 
+Utiliser la puissance de `nuxt` pour pré-fétcher vos données dans vos pages. 
