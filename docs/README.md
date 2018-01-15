@@ -18,30 +18,30 @@ Pour vous aider, nous vous conseillons d'utiliser l'extention [**Vue-devtools**]
 
 ## Présentation
 
-La présentation accompagnant cet atelier est disponible [sur github](https://mathieumure.github.io/hands-on-vue/)
+La présentation accompagnant cet atelier est disponible [sur github](https://mathieumure.github.io/hands-on-vue/).
 
 ## Par où commencer ?
 
 Tout au long de cet atelier, nous allons faire évoluer un site statique.
 
-Vous pouvez récupérer ce site à partir de github
+Récupérer ce site à partir de github.
 ```
 git clone --branch PW0 https://github.com/mathieumure/hands-on-vue
 ```
 
-Puis installez ses dépendances
+Puis installer ses dépendances
 ```
 npm install
 ```
 
-Et enfin, démarrez le server
+Et enfin, démarrer le server
 ```
 npm run dev
 ```
 
-Et accéder à votre site depuis votre navigateur sur [http://localhost:8080/](http://localhost:8080/).
+Il est maintenant possible d'accéder au site depuis un navigateur sur [http://localhost:8080/](http://localhost:8080/).
 
-Vous êtes maintenant prêt à démarrer.
+Tout est maintenant prêt pour démarrer.
 
 - [TP1 - Composants (Départ débutant)](./TP1.md)
 - [TP2 - Recherche filtrée](./TP2.md)
