@@ -2,7 +2,13 @@
 
 > Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW5`.
 
-Pour utiliser le server side rendering, nous allons migrer notre projet sur [nuxt.js](https://fr.nuxtjs.org)
+Pour utiliser le server side rendering (SSR), nous allons migrer notre projet sur [nuxt.js](https://fr.nuxtjs.org).
+
+Le SSR permet de générer votre page côté server au lieu d'être généré côté client. Cela est très utile pour le référencement ou pour avoir un chargement initial très rapide car le serveur va pré-charger les données et ainsi générer la page telle qu'elle doit être.
+
+![SSR](https://fr.nuxtjs.org/nuxt-schema.png)
+
+[Plus d'information ici.](https://fr.nuxtjs.org/guide)
 
 ## Initialisation de nuxt
 
