@@ -1,8 +1,8 @@
 # TP3 - Services and données asynchrones
 
-Le composant `Result` affiche les pokemons depuis une liste interne. Nous allons à présent récupérer cette liste depuis une API.
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW2`.
 
-> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW2`
+Le composant `Result` affiche les pokemons depuis une liste interne. Nous allons à présent récupérer cette liste depuis une API.
 
 - Externaliser la récupération des pokemons depuis un fichier de service `pokemonService.js` via une méthode `getPokemons`.
 - Récupérer la liste des pokemons lors de la création du composant `Result`.

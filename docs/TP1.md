@@ -1,9 +1,9 @@
 # TP1 - Composants
 
-Actuellement, l'ensemble du site est contenu dans notre `index.html`. Nous allons à présent utiliser la puissance de [Vue](https://vuejs.org/) pour rendre notre site dynamique à l'aide de composants.
-
 > Le code de base de l'application doit être celui correspondant au tag git `PW0`.
-> Si ce n'est pas le cas, lancer la commande git suivante `git checkout PW0`
+> Si ce n'est pas le cas, lancer la commande git suivante `git checkout PW0`.
+
+Actuellement, l'ensemble du site est contenu dans notre `index.html`. Nous allons à présent utiliser la puissance de [Vue](https://vuejs.org/) pour rendre notre site dynamique à l'aide de composants.
 
 ## Premiers composants
 

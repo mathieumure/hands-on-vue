@@ -1,5 +1,7 @@
 # TP5 - Vuex
 
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW4`.
+
 Nous allons maintenant gérer la récupération des pokemons en utilisant [vuex](https://vuex.vuejs.org/).
 
 Vuex permet de renforcer la stratégie du `single way data flow` en délégant l'état global de l'application (ou `state`) dans un seul objet de configuration, qui ne peut être modifié que par l'intermédiaire d'actions.
@@ -11,8 +13,6 @@ Les composants vont ainsi réargir à chaque modification de l'état global de l
 ![vuex-flow](https://vuex.vuejs.org/fr/images/vuex.png)
 
 [Plus d'information ici.](https://vuex.vuejs.org/fr/intro.html) 
-
-> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW4`
 
 ## Liste des pokemons
 - Importer le module `vuex`.
