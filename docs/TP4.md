@@ -2,6 +2,8 @@
 
 Nous allons maintenant utiliser [vue-router](https://router.vuejs.org) afin d'afficher le détail d'un pokemon.
 
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW3`
+
 ## Initialisation
 - Déplacer la logique de `App` dans un composant `Home`.
 - Importer et initialiser `vue-router` pour qu'il rende le composant `Home` quand il match `/`.

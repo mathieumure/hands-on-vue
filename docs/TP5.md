@@ -2,6 +2,8 @@
 
 Nous allons maintenant gérer la récupération des pokemons en utilisant [vuex](https://vuex.vuejs.org/).
 
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW4`
+
 ## Liste des pokemons
 - Importer le module `vuex`.
 - Créer un `store` qui va permettre de stocker la liste des pokemons, vide au démarrage de l'application.
