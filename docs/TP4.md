@@ -1,8 +1,8 @@
 # TP4 - Router
 
-Nous allons maintenant utiliser [vue-router](https://router.vuejs.org) afin d'afficher le détail d'un pokemon.
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW3`.
 
-> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW3`
+Nous allons maintenant utiliser [vue-router](https://router.vuejs.org) afin d'afficher le détail d'un pokemon.
 
 ## Initialisation
 - Déplacer la logique de `App` dans un composant `Home`.

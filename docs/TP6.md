@@ -1,8 +1,8 @@
 # TP6 - Server Side Rendering
 
-Pour utilser le server side rendering, nous allons migrer notre projet sur [nuxt.js](https://fr.nuxtjs.org)
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW5`.
 
-> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW5`
+Pour utiliser le server side rendering, nous allons migrer notre projet sur [nuxt.js](https://fr.nuxtjs.org)
 
 ## Initialisation de nuxt
 

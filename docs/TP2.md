@@ -1,8 +1,8 @@
 # TP2 - Recherche filtrée
 
-Nous allons à présent ajouter la logique de filtre dans notre site.
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW1`.
 
-> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW1`
+Nous allons à présent ajouter la logique de filtre dans notre site.
 
 ## Search.vue
 
