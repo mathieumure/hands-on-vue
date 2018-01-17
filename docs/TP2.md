@@ -2,6 +2,8 @@
 
 Nous allons à présent ajouter la logique de filtre dans notre site.
 
+> Pour obtenir une solution à l'exercice précédent, vous pouvez exécuter la commande git suivante `git checkout PW1`
+
 ## Search.vue
 
 - Dans le composant `Search`, ajouter un binding entre l'`input` et une donnée `searchValue`. Ne pas hésiter à afficher cette valeur directement dans le template.
