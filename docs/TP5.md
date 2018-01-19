@@ -15,9 +15,10 @@ Les composants vont ainsi réargir à chaque modification de l'état global de l
 [Plus d'information ici.](https://vuex.vuejs.org/fr/intro.html) 
 
 ## Liste des pokemons
+
 - Importer le module `vuex`.
 - Créer un `store` qui va permettre de stocker la liste des pokemons, vide au démarrage de l'application.
-- Ajouter une action `LOAD_POKEMONS` qui va muter le `state` pour indiquer le début du chargement, récupérer les pokemons via l'API, et re-muter le `state` pour charger l'ensemble des pokemons.
+- Ajouter une action `LOAD_POKEMONS` qui va déclencher une opération de mutation sur le `state` pour indiquer le début du chargement, récupérer les pokemons via l'API, et re-muter le `state` pour charger l'ensemble des pokemons.
 - Optimiser le `store` pour ne charger les pokemons que lorsque le `store` est vide.
 - Dans le composant `Result`:
   - utiliser `vuex` pour déclencher le chargement des pokemons lorsque le composant est créé.
