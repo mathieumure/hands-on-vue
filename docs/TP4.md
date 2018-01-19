@@ -5,6 +5,7 @@
 Nous allons maintenant utiliser [vue-router](https://router.vuejs.org) afin d'afficher le détail d'un pokemon.
 
 ## Initialisation
+
 - Déplacer la logique de `App` dans un composant `Home`.
 - Importer et initialiser `vue-router` pour qu'il rende le composant `Home` quand il match `/`.
 - Modifier `App` pour qu'il puisse afficher les composants matchés par `vue-router`.

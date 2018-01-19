@@ -14,9 +14,10 @@ Actuellement, l'ensemble du site est contenu dans notre `index.html`. Nous allon
 
 ## Dynamisation du composant result
 
-Nous allons maintenant créer un composant card qui affichera l'image et le nom d'un pokemon.
+Nous allons maintenant créer un composant `Card` qui affichera l'image et le nom d'un pokemon.
 
-- Ce composant aura comme `props` le nom du pokemon et son id.
+- Ce composant aura comme propriété le nom du pokemon et son id.
 - Ce composant pourra utiliser une `computed property` afin de calculer l'URL de l'image à charger.
 - Mettre à jour le composant `Result` pour utiliser ce composant.
 - Ajouter une liste de pokemons en tant que donnée interne du composant `Result` et utiliser la directive `v-for` pour l'afficher.
+ 

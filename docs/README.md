@@ -10,7 +10,7 @@ Pour effectuer l'ensemble de ces exercices, vous avez besoin des outils suivants
 - [NodeJS 8.x](https://nodejs.org/en/download/)
 - un IDE (WebStorm, Visual Studio Code, Vim, ...)
 
-Pour vous aider, nous vous conseillons d'utiliser l'extention [**Vue-devtools**](https://github.com/vuejs/vue-devtools) disponible pour:
+Pour vous aider, nous vous conseillons d'utiliser l'extension [**Vue-devtools**](https://github.com/vuejs/vue-devtools) disponible pour:
 - [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
