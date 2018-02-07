@@ -8,4 +8,4 @@ La présentation accompagnant cet atelier est disponible [sur github](https://ma
 
 ## Exercices
 
-Les différents exercices à réaliser sont disponibles [en ligne sur gitbook](https://mathieumure.gitbooks.io/handson-vue/) et également dans le dossier `docs` du projet.
+Les différents exercices à réaliser sont disponibles [en ligne sur gitbook](https://mathieumure.gitbooks.io/hands-on-vue/) et également dans le dossier `docs` du projet.
