@@ -11,6 +11,7 @@ Pour effectuer l'ensemble de ces exercices, vous avez besoin des outils suivants
 - un IDE (WebStorm, Visual Studio Code, Vim, ...)
 
 Pour vous aider, nous vous conseillons d'utiliser l'extension [**Vue-devtools**](https://github.com/vuejs/vue-devtools) disponible pour:
+
 - [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
@@ -25,16 +26,19 @@ La présentation accompagnant cet atelier est disponible [sur github](https://ma
 Tout au long de cet atelier, nous allons faire évoluer un site statique.
 
 Récupérer ce site à partir de github.
+
 ```
 git clone --branch PW0 https://github.com/mathieumure/hands-on-vue
 ```
 
 Puis installer ses dépendances
+
 ```
 npm install
 ```
 
 Et enfin, démarrer le server
+
 ```
 npm run dev
 ```
