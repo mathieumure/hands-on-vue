@@ -20,4 +20,3 @@ Nous allons maintenant créer un composant `Card` qui affichera l'image et le no
 - Ce composant pourra utiliser une `computed property` afin de calculer l'URL de l'image à charger.
 - Mettre à jour le composant `Result` pour utiliser ce composant.
 - Ajouter une liste de pokemons en tant que donnée interne du composant `Result` et utiliser la directive `v-for` pour l'afficher.
- 

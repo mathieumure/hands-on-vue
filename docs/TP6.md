@@ -13,6 +13,7 @@ Le SSR permet de générer votre page côté server au lieu d'être généré c�
 ## Initialisation de nuxt
 
 Initialiser un nouveau projet `nuxt` dans votre répertoire courant
+
 ```
 vue init nuxt-community/starter-template .
 ```
@@ -27,18 +28,21 @@ vue init nuxt-community/starter-template .
 - Déplacer le composant `Pokemon` dans `pages/pokemon/_id.vue`.
 - Modifier le composant `Pokemon` pour utiliser de nouveau `$route.params.id` au lieu d'une propriété.
 - Déplacer le store dans `store/index.js` et modifier légèrement l'export:
+
 ```js
-export default () => new Vuex.Store({ 
-  state: initialState, 
-  getters, 
-  actions, 
-  mutations 
-})
+export default () =>
+  new Vuex.Store({
+    state: initialState,
+    getters,
+    actions,
+    mutations
+  });
 ```
+
 - Supprimer les fichiers inutiles résiduels: `index.html`, `App.vue` et `Logo.vue`.
 
 ## Pre-fetching des données
 
-Utiliser la puissance de `nuxt` pour pré-fétcher vos données dans vos pages. 
+Utiliser la puissance de `nuxt` pour pré-fétcher vos données dans vos pages.
 
 > Pour obtenir une solution à cet exercice, vous pouvez exécuter la commande git suivante `git checkout PW6`

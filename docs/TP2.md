@@ -13,9 +13,11 @@ Nous allons à présent ajouter la logique de filtre dans notre site.
 
 Mettre à jour le composant `Result` pour qu'il n'affiche que les pokemons qui respectent notre recherche.
 Pour cela:
+
 - ajouter une propriété `criteria` qui contiendra notre critère de filtre.
 - n'afficher que les pokemons qui respectent ce critère.
-Par exemple, pour un `pokemon` donné, la logique suivante retournera `true` s'il respecte le critère de recherche :
+  Par exemple, pour un `pokemon` donné, la logique suivante retournera `true` s'il respecte le critère de recherche :
+
 ```javascript
 const lowerSearch = this.criteria.toLowerCase();
 const lowerPokemon = pokemon.name.toLowerCase();

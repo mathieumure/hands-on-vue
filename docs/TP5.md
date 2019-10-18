@@ -8,11 +8,11 @@ Vuex permet de renforcer la stratégie du `single way data flow` en délégant l
 
 ![vuex-flow](https://vuex.vuejs.org/fr/images/flow.png)
 
-Les composants vont ainsi réargir à chaque modification de l'état global de l'application et émettre des actions pour mettre à jour ce `state`. 
+Les composants vont ainsi réargir à chaque modification de l'état global de l'application et émettre des actions pour mettre à jour ce `state`.
 
 ![vuex-flow](https://vuex.vuejs.org/fr/images/vuex.png)
 
-[Plus d'information ici.](https://vuex.vuejs.org/fr/intro.html) 
+[Plus d'information ici.](https://vuex.vuejs.org/fr/intro.html)
 
 ## Liste des pokemons
 
