@@ -6,9 +6,10 @@ Pendant cet atelier, nous allons créer un Pokedex avec la bibliothèque VueJS.
 
 Pour effectuer l'ensemble de ces exercices, vous avez besoin des outils suivants :
 
-- GIT
-- [NodeJS 8.x](https://nodejs.org/en/download/)
-- un IDE (WebStorm, Visual Studio Code, Vim, ...)
+- Git
+- NodeJS `> 10.0.0`
+- [Yarn](https://yarnpkg.com/en/docs/install)
+- Have an up to date browser, like Firefox or Chrome.- un IDE (WebStorm, Visual Studio Code, Vim, ...)
 
 Pour vous aider, nous vous conseillons d'utiliser l'extension [**Vue-devtools**](https://github.com/vuejs/vue-devtools) disponible pour:
 
@@ -17,10 +18,6 @@ Pour vous aider, nous vous conseillons d'utiliser l'extension [**Vue-devtools**]
 
 > Pour les utilisateurs de VS Code, nous vous conseillons d'utiliser l'extension [**vetur**](https://vuejs.github.io/vetur/)
 
-## Présentation
-
-La présentation accompagnant cet atelier est disponible [sur github](https://mathieumure.github.io/hands-on-vue/).
-
 ## Par où commencer ?
 
 Tout au long de cet atelier, nous allons faire évoluer un site statique.
@@ -28,22 +25,14 @@ Tout au long de cet atelier, nous allons faire évoluer un site statique.
 Récupérer ce site à partir de github.
 
 ```
-git clone --branch PW0 https://github.com/mathieumure/hands-on-vue
+git clone https://github.com/mathieumure/hands-on-vue
 ```
 
 Puis installer ses dépendances
 
 ```
-npm install
+yarn install
 ```
-
-Et enfin, démarrer le server
-
-```
-npm run dev
-```
-
-Il est maintenant possible d'accéder au site depuis un navigateur sur [http://localhost:8080/](http://localhost:8080/).
 
 Tout est maintenant prêt pour démarrer.
 
