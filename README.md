@@ -13,6 +13,8 @@
 
 ### 🏠 [Homepage](https://hands-on-vue.netlify.com/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mathieumure/hands-on-vue.svg)](https://greenkeeper.io/)
+
 
 ## Install
 
